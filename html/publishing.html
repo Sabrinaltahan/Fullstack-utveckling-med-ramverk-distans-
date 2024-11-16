@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicering</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Mitt Projekt</a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="fw1.html">Bootstrap</a></li>
+        <li><a href="fw2.html">Tailwind</a></li>
+        <li><a href="publishing.html">Publicering</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidenav for mobile -->
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="fw1.html">Bootstrap</a></li>
+    <li><a href="fw2.html">Tailwind</a></li>
+    <li><a href="publishing.html">Publicering</a></li>
+  </ul>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1 class="blue-text text-darken-2">Hur man publicerar en webbplats</h1>
+    <p>För att publicera på GitHub Pages, följ dessa steg:</p>
+
+    <ul class="collection">
+      <li class="collection-item">Se till att alla filer i ditt projekt är sparade i ett GitHub-repository.</li>
+      <li class="collection-item">Gå till avsnittet <strong>Settings</strong> i ditt repository.</li>
+      <li class="collection-item">Sök efter avsnittet <strong>Pages</strong>.</li>
+      <li class="collection-item">Under <strong>Source</strong>, välj den gren som innehåller dina projektfiler (t.ex. `main`) och välj roten för din katalog.</li>
+      <li class="collection-item">Klicka på <strong>Save</strong>, och din webbplats kommer att publiceras på adressen: `https://your-username.github.io/repository-name`.</li>
+    </ul>
+    
+    <p>För mer detaljer, kan du besöka <a href="https://pages.github.com/" target="_blank">GitHub Pages-guide</a>.</p>
+
+    <!-- Git Paragraph -->
+    <div class="card-panel teal lighten-2">
+      <h5 class="white-text">Introduktion till Git</h5>
+      <p class="white-text">Git är ett versionshanteringssystem som används för att spåra förändringar i filer och projekt. Med Git kan du samarbeta med andra utvecklare genom att använda "grenar" (branches) och senare slå ihop förändringar i huvudgrenen (main). Git stöder att arbeta lokalt på din dator och sedan ladda upp förändringar till ett fjärr-repository som GitHub, så att du kan få åtkomst till dem från vilken plats som helst. Git är ett viktigt verktyg för alla webb- eller programutvecklare eftersom det gör det möjligt att spåra förändringar och organisera arbetet effektivt.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue-grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <h5 class="white-text">Mitt Projekt</h5>
+          <p class="grey-text text-lighten-4">Detta projekt har utvecklats med hjälp av GitHub Pages och Materialize.</p>
+        </div>
+        <div class="col s12 m6">
+          <h5 class="white-text">Nyttiga länkar</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://pages.github.com/" target="_blank">GitHub Pages</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 Alla rättigheter reserverade
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // Initialize sidenav
+    document.addEventListener('DOMContentLoaded', function () {
+      const elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Ramverk & Publiceringsplattformar</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Mitt Projekt</a>
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="fw1.html">Bootstrap</a></li>
+        <li><a href="fw2.html">Tailwind</a></li>
+        <li><a href="publishing.html">Publicering</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidenav for mobile -->
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="fw1.html">Bootstrap</a></li>
+    <li><a href="fw2.html">Tailwind</a></li>
+    <li><a href="publishing.html">Publicering</a></li>
+  </ul>
+
+
+  <!-- Main Content -->
+  <div class="container section" id="home">
+    <div class="row">
+      <div class="col s12 m6">
+        <img src="../images/css.jfif" alt="" class="responsive-img z-depth-1"  style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="col s12 m6">
+        <h1 class="center-align">Uppgiftsbeskrivning - CSS Ramverk & Publiceringsplattformar</h1>
+        <p>
+          Denna uppgift är en del av kursen "Fullstack-utveckling med ramverk". Syftet med uppgiften är att utvärdera och använda olika CSS-ramverk för webbutveckling, samt att använda publiceringsmetoder som inte är FTP-baserade.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>CSS Ramverk Använda i Uppgiften</h2>
+      <p>
+        I denna uppgift har vi använt tre olika CSS-ramverk: <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>, och <strong>Materialize</strong>. Nedan följer en kort beskrivning av varje ramverk, dess fördelar och nackdelar, samt min personliga erfarenhet av att använda dem.
+      </p>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="row">
+      <!-- Card 1: Bootstrap -->
+      <div class="col s12 m4">
+        <div class="card" style="width: 300px; height: 650px; display: flex; flex-direction: column;">
+          <div class="card-image" style="flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: #f9f9f9;">
+            <img src="../images/boot2.png" alt="Bootstrap Image" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="card-content" style="flex: 1;">
+            <span class="card-title" style="color: black; font-size: 18px;">Bootstrap</span>
+            <a href="#" style="color: #007bff;">Officiell webbplats</a>
+            <p>
+              <strong>Fördelar:</strong><br>
+              Populärt och välkänt, stort community och mycket dokumentation.<br>
+              Inkluderar många fördefinierade komponenter som knappar, modaler, tabeller, och formulär.<br>
+              Responsivt från början, fungerar bra på både stora och små skärmar.
+            </p>
+            <p>
+              <strong>Nackdelar:</strong><br>
+              Kan kännas generiskt om du inte anpassar stilarna.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Card 2: Tailwind CSS -->
+      <div class="col s12 m4">
+        <div class="card" style="width: 300px; height: 650px; display: flex; flex-direction: column;">
+          <div class="card-image">
+            <img src="../images/tailwindlogo.png" alt="Tailwind CSS Image"  style="width: 100%; height: 100%; object-fit: contain;">
+            <span class="card-title black-text">Tailwind CSS</span>
+          </div>
+          <div class="card-content">
+            <p><a href="https://tailwindcss.com/" target="_blank">Officiell webbplats</a></p>
+            <p><strong>Fördelar:</strong></p>
+            <ul>
+              <li>Helt anpassningsbart med hjälp av utility-first klasser.</li>
+              <li>Ger mer kontroll över designen, eftersom du kan anpassa varje detalj i gränssnittet.</li>
+              <li>Effektivt och snabbt för utveckling, om du är van vid att använda utility-klasser.</li>
+            </ul>
+            <p><strong>Nackdelar:</strong></p>
+            <ul>
+              <li>Kan vara svår att komma igång med om du inte är van vid utility-first metod.</li>
+              <li>Designen är beroende av hur du strukturerar klasserna, vilket kan leda till inkonsekvent stil om det inte görs rätt.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Materialize -->
+      <div class="col s12 m4">
+        <div class="card"style="width: 300px; height: 650px; display: flex; flex-direction: column;">
+          <div class="card-image">
+            <img src="../images/met.png" alt="Materialize Image"  style="width: 100%; height: 100%; object-fit: contain;">
+            <span class="card-title black-text">Materialize</span>
+          </div>
+          <div class="card-content">
+            <p><a href="https://materializecss.com/" target="_blank">Officiell webbplats</a></p>
+            <p><strong>Fördelar:</strong></p>
+            <ul>
+              <li>Stödjer Material Design, vilket ger ett modernt och användarvänligt gränssnitt.</li>
+              <li>Inkluderar fördefinierade komponenter och animationer.</li>
+              <li>Fungerar bra med både små och stora skärmar.</li>
+            </ul>
+            <p><strong>Nackdelar:</strong></p>
+            <ul>
+              <li>Designen kan kännas begränsad om du inte gillar Material Design.</li>
+              <li>Lite större filstorlekar om man inte anpassar vilka komponenter som laddas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  <!-- Footer -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Mitt Projekt</h5>
+          <p class="grey-text text-lighten-4">Alla rättigheter förbehållna &copy; 2024.</p>
+        </div>
+        <div class="col l6 s12">
+          <ul>
+            <li><a class="white-text" href="#home">Hem</a></li>
+            <li><a class="white-text" href="fw1.html">Ramverk 1</a></li>
+            <li><a class="white-text" href="fw2.html">Ramverk 2</a></li>
+            <li><a class="white-text" href="publishing.html">Publicering</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  // Initialize sidenav
+  document.addEventListener('DOMContentLoaded', function () {
+    const elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+  });
+</script>
+</body>
+</html>

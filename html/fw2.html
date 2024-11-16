@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind</title>
+  <!-- Inkludera Tailwind CSS-bibliotek -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Lägg till ett transparent lager för bakgrunden */
+    .bg-overlay {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Sidans bakgrund -->
+  <div class="fixed top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('../images/tailwind.png');"></div>
+
+  <!-- Transparent överlägg ovanpå bakgrunden -->
+  <div class="bg-overlay fixed top-0 left-0 w-full h-full"></div>
+
+  <!-- Navigeringsfält -->
+  <nav class="bg-white p-4 shadow-md z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-xl font-semibold">Mitt Projekt</a>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="text-gray-700">Hem</a></li>
+        <li><a href="fw1.html" class="text-gray-700">Bootstrap</a></li>
+        <li><a href="fw2.html" class="text-gray-700">Tailwind</a></li>
+        <li><a href="publishing.html" class="text-gray-700">Publicering</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Huvudinnehåll -->
+  <div class="container mx-auto mt-10 p-6 bg-white shadow-md rounded-lg z-10">
+    <h1 class="text-2xl font-bold mb-6">Tailwind CSS: Fördelar och Nackdelar</h1>
+    <div class="flex items-center mb-6">
+        <div class="w-1/2 pr-6">
+            <img src="../images/taiwind.jfif" alt="Tailwind-logotyp" class="w-3/4 h-auto rounded-lg shadow-md">
+          </div>
+          
+      <div class="w-1/2">
+        <p>Tailwind är ett mångsidigt ramverk som ger utvecklare fullständig kontroll över designen och tillåter en hög grad av anpassning.</p>
+        <ul class="list-disc pl-5 mt-2">
+          <li>Flexibilitet och anpassningsbarhet.</li>
+          <li>Ingen begränsning av fördefinierade komponenter.</li>
+          <li>Stöd för snabb utveckling genom utility-first design.</li>
+        </ul>
+        <p class="mt-4">Nackdelar:</p>
+        <ul class="list-disc pl-5 mt-2">
+          <li>Kan leda till kodduplicering om inte hanterat korrekt.</li>
+          <li>Inlärningskurva för nya användare.</li>
+        </ul>
+        <a href="https://tailwindcss.com/" class="text-blue-500" target="_blank">Officiell webbplats för Tailwind</a>
+      </div>
+    </div>
+
+    <h2 class="text-xl font-semibold mt-8">Data Tabell</h2>
+    <table class="table-auto w-full mt-4 border-collapse">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border px-4 py-2">#</th>
+          <th class="border px-4 py-2">Namn</th>
+          <th class="border px-4 py-2">Ålder</th>
+          <th class="border px-4 py-2">Stad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border px-4 py-2">1</td>
+          <td class="border px-4 py-2">Anna</td>
+          <td class="border px-4 py-2">25</td>
+          <td class="border px-4 py-2">Stockholm</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">2</td>
+          <td class="border px-4 py-2">Lucas</td>
+          <td class="border px-4 py-2">30</td>
+          <td class="border px-4 py-2">Göteborg</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">3</td>
+          <td class="border px-4 py-2">Emma</td>
+          <td class="border px-4 py-2">35</td>
+          <td class="border px-4 py-2">Malmö</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">4</td>
+          <td class="border px-4 py-2">Oscar</td>
+          <td class="border px-4 py-2">40</td>
+          <td class="border px-4 py-2">Uppsala</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">5</td>
+          <td class="border px-4 py-2">Sofia</td>
+          <td class="border px-4 py-2">45</td>
+          <td class="border px-4 py-2">Västerås</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="text-2xl font-semibold mb-4">Formulär</h2>
+<form class="space-y-4">
+  <!-- Namn -->
+  <div class="mb-4">
+    <label for="name" class="block text-lg font-medium text-gray-700">Namn</label>
+    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" placeholder="Ange ditt namn">
+  </div>
+
+  <!-- Ålder -->
+  <div class="mb-4">
+    <label for="age" class="block text-lg font-medium text-gray-700">Ålder</label>
+    <input type="number" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" id="age" placeholder="Ange din ålder">
+  </div>
+
+  <!-- Stad -->
+  <div class="mb-4">
+    <label for="city" class="block text-lg font-medium text-gray-700">Stad</label>
+    <select class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" id="city">
+      <option>Stockholm</option>
+      <option>Göteborg</option>
+      <option>Malmö</option>
+      <option>Uppsala</option>
+      <option>Västerås</option>
+    </select>
+  </div>
+
+  <!-- Kommentarer -->
+  <div class="mb-4">
+    <label for="comments" class="block text-lg font-medium text-gray-700">Kommentarer</label>
+    <textarea class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" id="comments" rows="3" placeholder="Skriv dina kommentarer"></textarea>
+  </div>
+
+  <!-- Accepterar villkoren -->
+  <div class="mb-4">
+    <div class="flex items-center">
+      <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 focus:ring-blue-500" id="agree">
+      <label class="ml-2 text-lg text-gray-700" for="agree">Jag accepterar villkoren</label>
+    </div>
+  </div>
+
+  <!-- Skicka -->
+  <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+    Skicka
+  </button>
+</form>
+
+  </div>
+
+  <!-- Sidfot -->
+  <footer class="bg-gray-800 text-white text-center py-3 mt-auto z-10">
+    <p class="mb-0">&copy; 2024 Mitt Projekt. Alla rättigheter förbehållna.</p>
+  </footer>
+</body>
+</html>
